@@ -20,11 +20,11 @@
 //***************************************************************
 // defined macros
 //**************************************************************/
-#define TICKS               ((uint16_t) 0x5DC)
-#define CCR1_DUTY_25        ((uint16_t) 0x177)
-#define CCR1_DUTY_50        ((uint16_t) 0x2EE)
-#define CCR1_DUTY_75        ((uint16_t) 0x465)
-#define CCR0_DUTY_50_INT    ((uint16_t) 0x2EE)
+#define TICKS               ((uint16_t) 0x5DC)//1500
+#define CCR1_DUTY_25        ((uint16_t) 0x465)//1125
+#define CCR1_DUTY_50        ((uint16_t) 0x2EE)//750
+#define CCR1_DUTY_75        ((uint16_t) 0x177)//375
+#define CCR0_DUTY_50_INT    ((uint16_t) 0x2EE)//750
 
 //***************************************************************
 // function prototypes

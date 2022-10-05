@@ -26,18 +26,20 @@ void pwm_open(void)
     config_gpio();
 
     // configure 2.3 for PWM
-    config_gpio_int();
+    //config_gpio_int();
 
     // enable NVIC
     config_nvic();
 
+    // set the duty cycle
+    // uncomment desired duty cycle to test each exercise
+    config_pwm_timer_25();        // exercise 2
+    //config_pwm_timer_50();        // exercise 1
+    //config_pwm_timer_75();          // exercise 3
+    //config_pwm_timer_50_int();    // exercise 4
+
     // start PWM timer
     start_pwm();
-
-    //config_pwm_timer_25();
-    //config_pwm_timer_50();
-    //config_pwm_timer_75();
-    config_pwm_timer_50_int();
 
     //enable interrupt
     __enable_interrupt();
